@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:background="@color/green"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/green_square">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:layout_margin="1dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_above="@+id/list_individual_bar"
+            android:id="@+id/list_time_number" />
+
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/list_individual_bar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/list_minutes"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_above="@+id/list_individual_bar"
+            android:id="@+id/list_time_mins" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/green_square"
+        android:layout_toRightOf="@+id/green_square"
+        android:layout_toEndOf="@+id/green_square"
+        android:padding="10dp"
+        android:id="@+id/middle_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alibion Park Platform 1"
+            android:textSize="15sp"
+            android:layout_gravity="left"
+            android:id="@+id/list_platform_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/list_time"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_gravity="left"
+            android:id="@+id/list_arrival_time" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="On time"
+            android:textSize="28sp"
+            android:textColor="@color/green"
+            android:layout_gravity="left"
+            android:id="@+id/list_status" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/middle_layout"
+        android:layout_toRightOf="@+id/middle_layout"
+        android:padding="5dp"
+        android:layout_toEndOf="@+id/middle_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14:11"
+            android:textSize="15dp"
+
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:layout_gravity="right"
+            android:id="@+id/list_destination_time" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allawah"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_gravity="right"
+            android:id="@+id/list_destination" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
